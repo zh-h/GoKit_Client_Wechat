@@ -7,7 +7,7 @@
     <groupId>gokit-wechat-client</groupId>
     <artifactId>GoKit_Client_Wechat</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>war</packaging>
     <dependencies>
     </dependencies>
 
@@ -21,7 +21,6 @@
                 <configuration>
                     <stopKey>stop</stopKey>
                     <stopPort>4502</stopPort>
-                    <webAppSourceDirectory>${basedir}/WebContent/</webAppSourceDirectory>
                     <webApp>
                         <contextPath>/</contextPath>
                     </webApp>
@@ -30,6 +29,29 @@
                     </httpConnector>
                     <reload>manual</reload>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}
+                            </outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/src/main/webapp</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

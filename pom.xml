@@ -21,6 +21,7 @@
                 <configuration>
                     <stopKey>stop</stopKey>
                     <stopPort>4502</stopPort>
+                    <webAppSourceDirectory>${basedir}/WebContent/</webAppSourceDirectory>
                     <webApp>
                         <contextPath>/</contextPath>
                     </webApp>
@@ -28,18 +29,6 @@
                         <port>8080</port>
                     </httpConnector>
                     <reload>manual</reload>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <encoding>UTF-8</encoding>
-                    <compilerArguments>
-                        <extdirs>WebContent/WEB-INF/lib/</extdirs>
-                    </compilerArguments>
                 </configuration>
             </plugin>
         </plugins>

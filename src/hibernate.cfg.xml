@@ -40,11 +40,11 @@
 
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.Device" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.UserBindingDevice" />
-		<mapping class="com.gizwits.weixin.newGokitdog.bean.Devicehistory" />
+		<mapping class="com.gizwits.weixin.newGokitdog.bean.DeviceHistory" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.DeviceStateCache" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.Groups" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.GroupInfo" />
-		<mapping class="com.gizwits.weixin.newGokitdog.bean.GroupMember" />
+		<mapping class="com.gizwits.weixin.newGokitdog.bean.GroupmMember" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.DeviceBindInfo" />
 		<mapping class="com.gizwits.weixin.newGokitdog.bean.UserToken" />
 
